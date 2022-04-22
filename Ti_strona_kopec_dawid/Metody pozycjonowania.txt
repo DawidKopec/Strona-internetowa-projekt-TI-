@@ -1,0 +1,1 @@
+Obie metody były ciekawe, jednak metoda flexboxfroggy byla bardziej intuicyjna i prostsza, być może co za tym idzie też bardziej ogólna. Natomiast przyjemniej pracowało mi się tą metodą i raczej nią będę kontynuował. Metoda z gridgarden była trudniejsza, więcej liczenia, mniej intuicyjne.

@@ -1,0 +1,183 @@
+:root{
+    --kolorciemnonieb: #180DD6;
+    --kolorpomarancz:#F7490F;
+    --kolormalinowy:#D60D68;
+    --zolty:yellow;
+    --czerwony:red;
+    --bialy:white;
+    --szary:grey;
+    --fiolet:purple;
+}
+
+
+
+.container{
+    
+    text-align: justify;
+    text-justify: inter-word;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2,5%;
+    padding-bottom: 2,5%;
+    color:white;
+     background-color: var(--kolorciemnonieb);
+    min-width: 100vh;
+}
+header,footer{
+  text-align: center;
+  color: white;
+   background-color: var(--kolormalinowy);
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    color:white;
+    font-size: 17px;
+}
+.obrazki{
+    box-shadow: 10px 10px 10px; border-radius: 5%;
+    max-width: 700px;
+    width: 90%;
+    
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+hr{
+  border: 10px solid var(--kolorpomarancz);
+  border-radius: 25px;
+  width:95%;
+}
+a:hover {
+  background-color: var(--zolty);
+}
+a:visited {
+  color: black;
+}
+a:focus {
+  background-color: var(--czerwony);
+}
+.obrazkipoj{
+    text-align: center;
+   border-radius: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+   
+    background-color: var(--bialy);
+    
+}
+.containerlast{
+  display: flex;
+   flex-direction : row;
+  text-align:justify;
+    background-color: var(--ciemnonieb);
+    
+   
+       
+    
+}
+.left, .right{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+padding-bottom: 60px;
+padding-top: 20px;
+background-color: var(--szary);
+flex-direction: column;
+    
+   
+    
+    
+}
+.left{
+      
+    margin-right: 10px;
+    margin-bottom: 20px;
+ 
+    
+}
+.right{
+    
+    
+      
+    margin-left: 10px;
+     margin-bottom: 20px;
+}
+.tabela{
+    text-align: center;
+    background-color: var(--szary);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+.tab,tr,td{
+    
+    border: 0.5px dotted var(--bialy);
+    border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+      
+}
+.tab{
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+.right p, .left p{
+    width: 60%;
+}
+
+
+
+.tlocos{
+    height: 100vh;
+    width:100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.animacja{
+  width: 70px;
+  height: 70px;
+  background-color: var(--fiolet) ;
+  position: relative;
+  animation: myfirst 5s linear 5 2s  alternate;
+    justify-content: center;
+
+}
+
+@keyframes myfirst {
+  0%   {transform: rotateX(0deg);}
+  100% {transform: rotateX(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

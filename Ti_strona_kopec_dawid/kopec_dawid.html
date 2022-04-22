@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<link rel="stylesheet" media="screen" href="Styles/style.css" />
+<link rel="stylesheet" media="screen" href="Styles/styl_menu_gorne.css" />
+<link href="Styles/all.css" rel="stylesheet" />
+
+<title>Eurowizja</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta name="author" content="Dawid Kopeć">
+<meta name="keywords" content="eurowizja,preselekcje,wyniki">
+<meta name ="description" content="strona o eurowizji">
+<link rel="shortcut icon" href="Images/flagawlochy.jpg" />
+<script src="https://kit.fontawesome.com/b1722cbf99.js" crossorigin="anonymous"></script>
+    <style>
+    .side-menu-container,
+      .side-menu,
+      .side-menu > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+      }
+      .side-menu-container {
+        position: fixed;
+        height: 100vh;
+        left: 0px;
+      }
+      .side-menu > a {
+        margin: 5px 0px;
+        height: 40px;
+        background-color: grey;
+      }
+      .side-menu > a:hover {
+        margin: 5px 0px;
+        height: 40px;
+        color: #fff;
+        background-color: #000;
+      }
+    </style>        
+</head>
+<body style="background-color:dodgerblue; margin-right: 0px; margin-left: 0px; margin-bottom: 0px; margin-top: 0px">
+    <div class="side-menu-container">
+      <nav class="side-menu">
+        <a class="do1" href="#sekcja1"
+          ><div><i class="fa-solid fa-house"></i></div
+        ></a>
+        <a class="do2" href="#sekcja3"
+          ><div><i class="fa-solid fa-guitar"></i></div
+        ></a>
+        <a class="do3" href="#sekcja4"
+          ><div><i class="fa-solid fa-trophy"></i></div
+        ></a>
+        <a class="do4" href="#sekcja5"
+          ><div><i class="fa-regular fa-flag"></i></div
+        ></a>
+      </nav>
+    </div>
+<div class="container-main,container">
+
+<header class="logo"> 
+    <img class="animacja" style="width:100px" src="Images/flagawlochy.jpg" alt="alternative"/>
+    <p class="animacja" >Eurowizja</p>
+    <nav class="nav-top">
+  <a class="do1" href="#sekcja1"><i class="fa-solid fa-house"></i><span class="button">Informacje o nas</span></a>
+        <a class="do2" href="#sekcja3"><i class="fa-solid fa-guitar"></i><span class="button">Preselekcje 2022</span></a>
+        <a class="do3" href="#sekcja4"><i class="fa-solid fa-trophy"></i><span class="button">Słynni zwyciezcy</span></a>
+        <a class="do4" href="#sekcja5"><i class="fa-regular fa-flag"></i><span class="button">Polskie występy</span></a>
+    </nav>
+    
+    
+    
+<script>
+ 
+            $(document).ready(function() {
+                $('.do1').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top-100}, 1000);
+                    }
+                });
+            });
+            
+            
+            $(document).ready(function() {
+                $('.do2').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top-100}, 1000);
+                    }
+                });
+            });
+            
+            $(document).ready(function() {
+                $('.do3').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top-100}, 1000);
+                    }
+                });
+            });
+            
+            $(document).ready(function() {
+                $('.do4').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top-100}, 1000);
+                    }
+                });
+            });
+            
+
+/*$(document).ready(function() {
+  if ($(this).width() <= 600) {
+
+    $('.side-menu-container').hide();
+       $('.nav-top').show();
+      
+
+  } else {
+
+    $('.side-menu-container').show();
+      $('.nav-top').hide();
+
+    }
+
+});
+*/
+    
+$(document).ready(function(){
+    
+      $('.side-menu-container').hide();
+       $('.nav-top').show();
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 600){
+             $('.side-menu-container').show();
+      $('.nav-top').hide();
+           
+        }
+        else
+            {
+        $('.side-menu-container').hide();
+       $('.nav-top').show();
+            }
+    });
+});    
+        
+    </script>    
+    
+</header>
+<img class="tlocos" src="Images/eurowizja_background.jpeg"
+         alt="zwyciezcy"
+/>
+<div class="container" id="sekcja1">
+    <hr />
+<h1>Trochę o nas</h1>
+<p>Jesteśmy jednym z największych zrzeszeń fanów eurowizyjnych w Europie, na stronie możesz dowiedzieć się o historii konkursu, najwybitniejszych zwycięzcach, polskich występach w konkursie oraz bieżących nowości związanych z wydarzeniem muzycznym.</p>
+<div class = "obrazkipoj">
+    <img class="obrazki"
+      src=https://www.ebu.ch/files/live/sites/ebu/files/News/2019/05/esc_revamp_main.jpg
+        alt=obrazek
+    />
+    <a href="https://www.ebu.ch/news/2019/05/ebu-issues-statement-on-eurovision-song-contest-grand-final-jury-result">Link do obrazka</a>
+</div>
+<h2>Aktywność grupy</h2>
+    <p>Grupa działa aktywnie, wymienaimy się spostrzeżeniami, ulubionymi występami, organizujemy wspólne wyjazdy na konkurs jak i lokalne spotkania sympatyków, typujemy zwycięzców wspólnie komentujemy przebieg gali i wspominamy najlepsze występy.</p>
+<h3>Social Media</h3>
+    <p>Możesz nas znaleźć również na portalach społecznościowych typu Facebook, Instagram czy Twitter, zachęcamy do zaobserwowania profili i śledzenia nowości jak i świetnej zabawy.</p>
+<hr />
+</div>
+<div class="container" id="sekcja2">
+<hr />
+<h1>Czym jest Eurowizja</h1>
+    <p>Konkurs Piosenki Eurowizji jest najpopularniejszym z najdłużej trwających programów telewizyjnych na świecie, a także jednym z najchętniej oglądanych niesportowych wydarzeń międzynarodowych na świecie, który corocznie ogląda ok. 100–600 mln widzów. 23 maja 2015 wydarzenie zostało wpisane do księgi rekordów Guinnessa jako „najdłużej transmitowany coroczny konkurs muzyczny w historii”. Konkurs transmitowany jest w większości krajów europejskich, a także w wielu innych państwach świata, takich jak Brazylia, Chiny, Egipt, Filipiny, Hongkong, Indie, Japonia, Jordania, Kanada, Kolumbia, Korea Południowa, Meksyk, Nowa Zelandia, Portoryko, Stany Zjednoczone, Tajlandia, Tajwan, Urugwaj czy Wenezuela, mimo że krajowi nadawcy z tych państw nie biorą udziału w konkursie. Od 2000 konkurs transmitowany jest także przez Internet.</p>
+ <hr />
+</div>
+<div class="container" id="sekcja3">
+<hr />    
+<h1>Polskie preselekcje 2022</h1>
+    <p>Telewizja Polska planowała wewnętrzny wybór reprezentanta spośród nadesłanych propozycji. 28 grudnia ogłosiła, że nazwisko reprezentanta i piosenka zostaną ogłoszone 15 stycznia 2022. Dwa dni przed tym terminem w mediach pojawiły się doniesienia o planach organizacji koncertu eliminacyjnego, co TVP potwierdziła 14 stycznia w porannym programie Pytanie na śniadanie, podając jednocześnie listę 10 finalistów. Polskie eliminacje do Konkursu Piosenki Eurowizji odbyły się 19 lutego 2022 w telewizyjnych studiach nr 4 i 5 w siedzibie TVP przy ul. Woronicza 17 w Warszawie. Program transmitowano na żywo na antenach TVP2, TVP Polonia i TVP Rozrywka oraz w Internecie na TVP VOD w godzinach 20:00-22:40. <b>Poniżej czołowa piątka preselekcji eurowizyjnych.</b></p>
+    
+    <ol>
+      <li>Krystian Ochman - "River"</li>
+      <li>Daria - „Paranoia”</li>
+      <li>Unmute - „Głośniej niż decybele”</li>
+      <li>Kuba Szmajkowski - „Lovesick”</li>
+      <li>Karolina Lizer - „Czysta woda”</li>
+    </ol>
+    
+<hr />
+</div>
+<div class="container" id="sekcja4">
+<hr />    
+<h1>Najwybitniejsi zwycięzcy</h1>
+    <p>Od 1956 zorganizowano 64 konkursy, a każdy koncert finałowy wygrywał jeden reprezentant (z wyjątkiem widowiska w 1969, kiedy to pierwsze miejsce z taką samą liczbą punktów zajęły aż cztery reprezentacje: Francji, Holandii, Hiszpanii i Wielkiej Brytanii). Pierwszy konkurs wygrała Lys Assia, reprezentantka Szwajcarii z utworem „Refrain”.Wygranie Konkursu Piosenki Eurowizji zapewniło międzynarodową karierę i rozgłos wielu wykonawcom. Poniżej przedstawimy kilku najwybitniejszych zwycięzców, pełna lista pod tym <a href="https://pl.wikipedia.org/wiki/Lista_zwyci%C4%99zc%C3%B3w_Konkursu_Piosenki_Eurowizji">linkiem.</a></p>
+    <ul>
+      <li>ABBA</li>
+      <li>Celine Dion</li>
+      <li>Loreen</li>
+      <li>Måns Zelmerlöw</li>
+      <li>Måneskin</li>
+    </ul>
+
+<div class = "obrazkipoj">    
+<img class="obrazki"
+      src=https://static1.srcdn.com/wordpress/wp-content/uploads/2021/07/pjimage-19-1.jpg
+         alt="zwyciezcy"
+/>
+<a href="https://screenrant.com/eurovision-winners-who-became-famous-successful/">Link do obrazka</a>
+</div>
+<hr/>
+</div>
+
+
+<div class="container" id="sekcja5">
+<hr />    
+<h1>Historia polskich występów</h1>
+    <p>Polska uczestniczy w Konkursie Piosenki Eurowizji od 1994. Od czasu debiutu za transmisję i przygotowania do konkursu w kraju odpowiada polski nadawca publiczny Telewizja Polska.Najlepszym wynikiem kraju w konkursie jest drugie miejsce zajęte przez Edytę Górniak z piosenką „To nie ja!” w finale konkursu w 1994. Z powodu słabych wyników osiągniętych poprzez reprezentantów, TVP nie została dopuszczona do udziału w konkursie w 2000 i 2002. W 2011 wycofała się z uczestnictwa w 57. konkursie, tłumacząc decyzję przygotowaniami do dwóch imprez sportowych rozgrywanych w 2012: Mistrzostw Europy w Piłce Nożnej i Letnich Igrzysk Olimpijskich. Powróciła do konkursu po dwóch latach przerwy, wysyłając reprezentanta na konkurs w 2014.</p>
+    
+<div class="containerlast">
+    <div class="left">
+        <p>Popularni byli reprezentanci:</p>
+    <ul class="listy">
+      <li>Edyta Górniak</li>
+      <li>Ich troje</li>
+      <li>Blue Cafe</li>
+      <li>Andrzej Piaseczny</li>
+      <li>Justyna Steczkowska</li>
+    </ul>
+        </div>
+    <div class="right">
+        <p>Kraje które w historii przyznały Polsce najwięcej punktów</p>
+    <ol class="listy">
+      <li>Niemcy - 68</li>
+      <li>Austria - 48</li>
+      <li>Wielka Brytania - 40</li>
+      <li>Francja - 39</li>
+      <li>Irlandia - 37</li>
+    </ol>
+    </div>
+</div>
+    <div class="tabela">
+        <p>Ranking najlepszych polskich występów na konkursie Eurowizji(na podstawie zajmowanych miejsc).</p>
+    <table class="tab">
+      <thead>
+        <tr>
+          <td>Autor</td>
+          <td>Tytuł</td>
+          <td>Miejsce</td>
+          <td>Rok</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Edyta Górniak</td>
+          <td>"To nie ja"</td>
+          <td>2</td>
+          <td>1994</td>
+        </tr>
+        <tr>
+          <td>Ich troje</td>
+          <td>„Żadnych granic”</td>
+          <td>7</td>
+          <td>2003</td>
+        </tr>
+          <tr>
+          <td>Michał Szpak</td>
+          <td>„Color of Your Life”</td>
+          <td>8</td>
+          <td>2016</td>
+        </tr>
+          <tr>
+          <td>Anna Maria Jopek</td>
+          <td> „Ale jestem”</td>
+          <td>11</td>
+          <td>1997</td>
+        </tr>
+            <tr>
+          <td>Donatan i Cleu</td>
+          <td> „My Słowanie”</td>
+          <td>14</td>
+          <td>2014</td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    </div>
+<hr/>    
+</div>
+    
+
+    <footer>
+		
+		<p>[Dawid] [Kopec], [2022] [All rights reserved]</p>
+	</footer>
+
+</div>
+</body>
+</html>

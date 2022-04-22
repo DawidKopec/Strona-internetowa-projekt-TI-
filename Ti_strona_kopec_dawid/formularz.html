@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" media="screen" href="Styles/style_formularz.css" />
+    </head>
+<body>
+
+<h1>Formularz</h1>
+
+<form id="Myform" action="/action_page.php">
+<fieldset>
+    <legend>Podaj imię:</legend>
+  <input class="pierwsza" type="text" id="fname" name="fname" value="">
+</fieldset><br>
+ <fieldset>
+    <legend>Podaj Nazwisko:</legend>
+  <input class="pierwsza"type="text" id="lname" name="lname" value="">
+    </fieldset><br>
+  <fieldset>
+    <legend>Podaj płeć:</legend>
+    <div><input  class="plec" type="radio" id="k" name="plec" value="Kobieta">Kobieta</div>
+    <div><input  class="plec"type="radio" id="m" name="plec" value="Mężczyzna">Mężczyzna</div>
+    <div><input class="plec" type="radio" id="n" name="plec" value="Nie chce podawać">Nie chce podawać</div>
+    </fieldset><br>
+    <fieldset>
+    <legend>Skąd pochodzisz:</legend>
+    <select id="pochodzenie" name="pochodzenie">
+    <option value="ze wsi">Ze wsi</option>
+    <option value="z miasta">Z miasta</option>
+    <option value="z metropolii" selected>Z metropolii</option>
+        </select>
+    </fieldset><br>
+    <fieldset>
+    <legend>Wybierz ulubiony kolor:</legend>
+    <select id="kolory" name="kolory" size="4" multiple>
+    <option value="Czarny">Czarny</option>
+    <option value="Biały">Biały</option>
+    <option value="Kolorowy">Kolorowy</option>
+    <option value="Każdy">Każdy</option>
+  </select>
+    </fieldset><br>
+    <fieldset>
+    <legend>Wybierz ulubioną literature:</legend>
+  <input type="checkbox" id="fantasy"  value="fantasy">
+  <label for="fantasy">Fantasy</label><br>
+  <input type="checkbox" id="kryminaly" value="kryminaly">
+  <label for="kryminaly">Kryminały</label><br>
+  <input type="checkbox" id="piekna" value="Piekna">
+  <label for="piekna">Piękna</label>
+    </fieldset><br>
+    <fieldset>
+    <legend>Napisz kilka słow o sobie</legend>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    </fieldset><br>
+   <fieldset>
+    <legend>Podsumowanie:</legend>
+  <input type="submit" value="Wyślij formularz">
+  <input type="reset"  value="Wyczyść dane">
+    </fieldset>
+</form> 
+</body>
+</html>

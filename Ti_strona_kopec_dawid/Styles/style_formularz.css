@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+    width: 500px;
+}
+.plec{
+    display: inline-block;
+}
+fieldset{
+    width: 500px;
+    background-color: lightblue;
+}
+.pierwsza{
+    width: 100%;
+    align-content: center;
+    background-color: aqua;
+}
+legend{
+    background-color: gray;
+  color: white;
+  padding: 10px 10px;
+    border-radius: 20%;
+}
+div{
+    display: inline-block;
+}
+option:hover{
+    background-color: yellow;
+}
+option:indeterminate {
+  box-shadow: 0 0 1px 1px red;
+}
+option:visited{
+    color:black;
+}
