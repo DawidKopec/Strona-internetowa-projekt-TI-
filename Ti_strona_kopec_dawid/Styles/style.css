@@ -1,3 +1,4 @@
+
 :root{
     --kolorciemnonieb: #180DD6;
     --kolorpomarancz:#F7490F;
@@ -35,6 +36,8 @@ body{
     font-family: 'Barlow Condensed', sans-serif;
     color:white;
     font-size: 17px;
+    
+    
 }
 .obrazki{
     box-shadow: 10px 10px 10px; border-radius: 5%;
